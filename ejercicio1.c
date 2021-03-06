@@ -7,7 +7,7 @@
 int main() {
     int i,j;
 
-    float Matriz[Row][Note] ={{9.3, 9.0, 7.4, 8.0, 7.7}, {1, 2, 3, 4, 5}};
+    char *Matriz[Row][Note] ={{"9.3", "9.0", "7.4", "8.0", "7.7"}, {"AlgbI", "CalcI", "Prg", "FCC", "Estd"}};
     float Array[Note] = {9.3, 9.0, 7.4, 8.0, 7.7};
     float sum = 0.0;
     
@@ -16,9 +16,9 @@ int main() {
     }
     printf("The average note is = %f. \n", sum/5);
 
-    for (i = 0; i < Note; i++){
-        for (j = 0; j < Row; j++){
-            printf("%f. \t", Matriz[i][j]);
+    for (i = 0; i < Row; i++){
+        for (j = 0; j < Note; j++){
+            printf("%s \t", Matriz[i][j]);
         }
         printf("\n");
     }
