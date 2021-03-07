@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#define Size 40
 #define Note 5
 #define Row 2
 
